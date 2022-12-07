@@ -19,3 +19,32 @@ users = [
     {"id": "8", "name": "Simon Peterson", "age": 30},
     {"id": "9", "name": "Daniel Cane", "age": 51},
 ]
+
+# 1
+def getUserAverageAge(x):
+    total_age = sum(d["age"] for d in users)
+    print(f"Total age of all users: {total_age}")
+    average_age = round(total_age / len(users))
+    print(f"Average age of all users: {average_age} ")
+    print(type(average_age))
+
+
+getUserAverageAge(users)
+
+
+# 2
+def getUsersNames(x):
+    # for user in users:
+    #     print(user)
+
+    new_list = []
+    for user in users:
+        new_list.append(user["name"])
+
+    print(sorted(new_list))
+
+    # for item in sorted(users, key=lambda x: x["name"]):
+    #     print(item)
+
+
+getUsersNames(users)
