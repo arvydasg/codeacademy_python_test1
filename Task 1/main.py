@@ -26,7 +26,7 @@ users = [
 
 # 1
 def filterDogOwners(x):
-    ko_ieskau = [False]
+    ko_ieskau = [True]
     tik_turintys_suni = [d for d in users if d['hasDog'] in ko_ieskau]
     print(tik_turintys_suni)
 
